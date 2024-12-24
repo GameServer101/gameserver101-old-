@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <script>
+        var _0x4d2a=["\x69\x6D\x70\x6F\x73\x73\x69\x62\x6C\x65"];
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === String.fromCharCode(..._0x4d2a)) {
+                window.location.href = "main.html";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter Password</h2>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button onclick="checkPassword()">Submit</button>
+</body>
+</html>
