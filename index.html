@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Protected Page</title>
-    <script>
-        var _0x4d2a = [0x49, 0x6D, 0x70, 0x6F, 0x73, 0x73, 0x69, 0x62, 0x6C, 0x65];
-        function checkPassword() {
-            var password = document.getElementById("password").value;
-            if (password === String.fromCharCode(..._0x4d2a)) {
-                window.location.href = "main.html";
-            } else {
-                alert("Incorrect password. Please try again.");
-            }
-        }
-        document.addEventListener(KeyboardEvent, function (e) {
-            if (e.key === "Enter") {
-                checkPassword();
-            }
-        });
-    </script>
-</head>
-<body>
-    <h2>Enter Password</h2>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password">
-    <button onclick="checkPassword()">Submit</button>
-</body>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Game Server 101</title>
+		<style>
+			.center {
+				text-align: center;
+			}
+			.centerLink {
+				display: block;
+            	width: 100px; /* Set a width */
+       		    margin: 0 auto;
+			}
+		</style>
+	</head>
+ 	<body>
+		<h1 class="center">Game Server 101</h1>
+		<p class="center">Welcome to Game Server 101! If there are any issues, contact me at <a href="mailto:wmckenzie2022@outlook.com">wmckenzie2022@outlook.com</a></p>
+		<h3 class="center">Happy Gaming!!!</h3>
+		<br><br>
+		<a href="CookieClicker/index.html" class="centerLink">Cookie Clicker</a>
+	</body>
 </html>
